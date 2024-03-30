@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropout Prediction System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dropout Prediction System</h1>
+        <form id="questionnaireForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="personality">Rate your personality on a scale of 1 to 10:</label>
+            <input type="number" id="personality" name="personality" min="1" max="10" required><br><br>
+
+            <label for="thinking">Rate your thinking ability on a scale of 1 to 10:</label>
+            <input type="number" id="thinking" name="thinking" min="1" max="10" required><br><br>
+
+            <label for="ideology">Rate your ideology alignment on a scale of 1 to 10:</label>
+            <input type="number" id="ideology" name="ideology" min="1" max="10" required><br><br>
+
+            <label for="marks">Enter your average marks (out of 100):</label>
+            <input type="number" id="marks" name="marks" min="0" max="100" required><br><br>
+
+            <label for="attendance">Enter your attendance percentage:</label>
+            <input type="number" id="attendance" name="attendance" min="0" max="100" required><br><br>
+
+            <label for="familySupport">Do you have strong family support? (Yes/No)</label>
+            <select id="familySupport" name="familySupport" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select><br><br>
+
+            <label for="extracurricular">Are you involved in extracurricular activities? (Yes/No)</label>
+            <select id="extracurricular" name="extracurricular" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select><br><br>
+
+            <label for="stressLevel">Rate your stress level on a scale of 1 to 10:</label>
+            <input type="number" id="stressLevel" name="stressLevel" min="1" max="10" required><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="predictionResult"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
